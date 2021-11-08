@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "loans",
+  "info": {
+    "name": "Loan",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "loans"
+    },
+    "address": {
+      "model": "address"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": false,
+      "private": true
+    },
+    "artwork": {
+      "model": "artwork",
+      "via": "loans"
+    }
+  }
+}

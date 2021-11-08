@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artworks",
+  "info": {
+    "name": "Artwork"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "private": true,
+      "minLength": 3,
+      "maxLength": 3
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "loans": {
+      "via": "artwork",
+      "collection": "loan"
+    }
+  }
+}
