@@ -5,4 +5,23 @@
  * to customize this model
  */
 
-module.exports = {};
+module.exports = {
+    lifecycles: {
+        async beforeCreate(data) {
+            const { formattedAddress } = data;
+
+            if (formattedAddress) {
+                const geocodedData = await strapi.services.address.geocode({ address: formattedAddress });
+                Object.assign(data, geocodedData);
+            };
+        },
+        async beforeUpdate(params, data) {
+            const { formattedAddress } = data;
+
+            if (formattedAddress) {
+                const geocodedData = await strapi.services.address.geocode({ address: formattedAddress });
+                Object.assign(data, geocodedData);
+            };
+        },
+    },
+};

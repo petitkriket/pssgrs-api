@@ -11,6 +11,7 @@
   "devDependencies": {},
   "dependencies": {
     "knex": "0.21.18",
+    "node-geocoder": "^3.27.0",
     "sqlite3": "5.0.0",
     "strapi": "3.6.8",
     "strapi-admin": "3.6.8",

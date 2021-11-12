@@ -59,6 +59,14 @@
       "plugin": "users-permissions",
       "configurable": false
     },
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
     "addresses": {
       "via": "user",
       "collection": "address"

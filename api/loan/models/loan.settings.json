@@ -13,9 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "user": {
+      "via": "loans",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "loans"
+      "model": "user"
     },
     "address": {
       "model": "address"

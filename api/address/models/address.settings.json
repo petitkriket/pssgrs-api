@@ -12,19 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "formatted_address": {
+    "formattedAddress": {
       "type": "string"
     },
-    "street_name": {
+    "streetName": {
       "type": "string"
     },
-    "street_number": {
+    "streetNumber": {
       "type": "string"
     },
     "city": {
       "type": "string"
     },
-    "zip_code": {
+    "zipCode": {
       "type": "string"
     },
     "state": {
