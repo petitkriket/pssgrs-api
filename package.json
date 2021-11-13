@@ -12,6 +12,8 @@
   "dependencies": {
     "knex": "0.21.18",
     "node-geocoder": "^3.27.0",
+    "pg": "^8.7.1",
+    "pg-connection-string": "^2.5.0",
     "sqlite3": "5.0.0",
     "strapi": "3.6.8",
     "strapi-admin": "3.6.8",
@@ -19,10 +21,15 @@
     "strapi-plugin-content-manager": "3.6.8",
     "strapi-plugin-content-type-builder": "3.6.8",
     "strapi-plugin-email": "3.6.8",
+    "strapi-plugin-graphql": "3.6.8",
     "strapi-plugin-i18n": "3.6.8",
     "strapi-plugin-international-fields": "^1.1.1",
+    "strapi-plugin-sentry": "^3.6.8",
     "strapi-plugin-upload": "3.6.8",
     "strapi-plugin-users-permissions": "3.6.8",
+    "strapi-provider-email-mailtrap": "^3.5.0",
+    "strapi-provider-email-sendgrid": "^3.6.8",
+    "strapi-provider-upload-cloudinary": "^3.6.8",
     "strapi-utils": "3.6.8"
   },
   "author": {
